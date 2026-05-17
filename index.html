@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html data-theme="black">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,11 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <title>Explore Khalamoni</title>
     <style type="text/tailwindcss">
       @theme {
@@ -22,12 +27,23 @@
       Hello world!
     </h1>
 
-    <div class="text-center">
-      <button
-        class="btn"
-      >
-        Click Me
-      </button>
+    <div class="text-center bg-primary/50">
+      <button class="btn btn-primary rounded-full w-64">Click Me</button>
+      <button class="btn btn-error">Click Me</button>
+      <button class="btn btn-secondary">Click Me</button>
+      <button class="btn btn-warning btn-xl rounded-full">Click Me</button>
+      <button class="btn btn-accent btn-outline">Click Me</button>
+      <button class="btn btn-neutral btn-soft">Click Me</button>
     </div>
+
+    <details class="dropdown">
+      <summary class="btn m-1">open or close</summary>
+      <ul
+        class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+      >
+        <li><a>Item 1</a></li>
+        <li><a>Item 2</a></li>
+      </ul>
+    </details>
   </body>
 </html>
